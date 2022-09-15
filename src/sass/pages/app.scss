@@ -1,0 +1,25 @@
+.app__body {
+    display: flex;
+    height: 100vh;
+}
+
+.app__loading {
+    text-align: center;
+    padding-bottom: 100px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+    &--Contents {
+        margin: 0 auto;
+
+        img {
+            height: 120px;
+        }
+
+        .spinner {
+            margin-left: 60px;
+            margin-top: 55px;
+        }
+    }
+}

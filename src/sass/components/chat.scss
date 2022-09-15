@@ -1,0 +1,60 @@
+.chat {
+    flex: 0.7;
+    margin-top: 60px;
+    z-index: 666;
+    flex-grow: 1;
+    overflow-y: scroll;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    &__headerLeft {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            display: flex;
+            text-transform: lowercase;
+            margin-right: 10px;
+
+            .MuiSvgIcon-root {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+        }
+
+        .edit {
+            padding: 0 10px;
+            font-size: 14px;
+            color: $gray;
+
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &__headerRight {
+        display: flex;
+        align-items: center;
+        border: 1px solid $light-gray;
+        border-radius: 6px;
+        width: 5.2rem;
+        justify-content: space-evenly;
+
+        img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+
+        .divider {
+            border: 1px solid $light-gray;
+            height: 30px;
+        }
+    }
+}

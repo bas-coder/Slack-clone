@@ -1,0 +1,102 @@
+.header {
+    &__container {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        z-index: 888;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+        background-color: $primary;
+        color: $white;
+    }
+
+    &__left {
+        flex: 0.25;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+
+    &__leftRight {
+        .MuiSvgIcon-root {
+            margin: 0 7px;
+        }
+    }
+
+    &__search {
+        flex: 0.5; 
+        display: flex;
+        opacity: 1;
+        border-radius: 6px;
+        background-color: $primary-light;
+        text-align: left;
+        padding: 6px;
+        padding-right: 30px;
+        color: $white;
+        max-width: 100%;
+
+        input {
+            background: transparent;
+            border: none;
+            min-width: 100%;
+            margin: 0 auto;
+            outline: 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: $white;
+
+        }
+    }
+
+    &__avatar {
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__right {
+        flex: 0.25;
+        display: flex;
+        align-items: flex-end;
+
+        .MuiSvgIcon-root {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+    }
+
+    &__rightImg {
+        position: relative;
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
+        margin-right: 1.5rem;
+
+        .fiber_record {
+            border: 2px solid $primary;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            background-color: green;
+            right: -6px;
+          }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .google__img {
+            border-radius: 10px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+    }
+}

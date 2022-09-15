@@ -1,0 +1,81 @@
+.sidebar {
+    background-color: $primary;
+    color: $white;
+    position: relative;
+    top: -8px;
+    flex: 0.3;
+    height: 102vh;
+    border-top: 1px solid $secondary;
+    max-width: 260px;
+
+    &__header {
+        display: flex;
+        border-bottom: 1px solid $secondary;
+        padding-bottom: 10px;
+        padding: 13px;
+        margin-top: 60px;
+        border-bottom: 1px solid $primary-light;
+        
+        .MuiSvgIcon {
+            padding: 8px;
+            color: $secondary;
+            font-size: 18px;
+            background-color: $white;
+            border-radius: 999px;
+        }
+
+        
+    }
+
+    &__info {
+        flex: 1;
+
+        h2 {
+            font-size: 15px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            display: flex;
+            font-size: 13px;
+            font-weight: 400;
+            align-items: center;
+            }
+
+        .MuiSvgIcon-root     {
+            font-size: 14px;
+            margin-top: 1px;
+            margin-right: 2px;
+            color: $green !important ;
+        }
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid $primary-light;
+    }
+
+    &__footer {
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 7px;
+        max-height: 42px;
+        justify-content: space-between;
+        border-top: 1px solid $primary-light;
+
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+
+    &__footerLeft {
+        border: 1px solid $gray;
+        border-radius: 10px;
+        width: fit-content;
+    }
+
+}
